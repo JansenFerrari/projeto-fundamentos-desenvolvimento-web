@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>Portifólio Pessoal</title>
+</head>
+
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Jansen Ferrari Leitão</h1>
+        </div>
+        
+<!-- Criação do menu com 4 links de acesso para áreas no mesmo documento-->
+        <nav>
+            <ul class="hero-menu">
+                <li><a href="#sobre-mim"">Sobre Mim!</a></li>
+                <li><a href=" #formacao-e-idiomas"">Formação</a></li>
+                <li><a href="#portifolio-e-redes-sociais"">Portifólio e Redes Sociais</a></li>
+                <li><a href=" #contato">Contato</a></li>
+            </ul>
+        </nav>
+
+    </header>
+<!-- Corpo principal do documento, onde foi inserida as seções com cada parte de trabalho.-->
+    <main>
+        <!-- No leiout da página, eu optei por deixar uma section para cada parte e dentro dela, um header para ser o cabeçalho da section, por questõa de semântica. Dentro da Section, um paragrafo com o conteúdo. -->
+        <div class="container">
+            <section id="sobre-mim">
+                <header>
+                    <h2>Sobre Mim!</h2>
+                </header>
+                <p>
+                    Meu nome é <strong class="destaque-no-texto">Jansen Ferrari Leitão.</strong> Moro em Colatina, Espirito Santo. Sou apaixonado por tecnologia, principalmente aquela aplicada ao Geoprocessamento e Sensoriamento Remoto. Atuo com Avaliação e Perícias em imóveis rurais, escrevendo laudos de avaliação coompletos. Gosto de produzir mapas utilizando o Qgis para meus trabalhos.
+                </p>
+                <p>
+
+                    Gosto de jogar video-game com meu filho, amor da minha vida e sempre levo uma surra em DBZ&#x1F61C! Mas por vezes, grandes exploradores do mundo do Minecraft.
+
+                </p>
+            </section>
+
+
+            <section id="formacao-e-idiomas">
+                <header>
+                    <h2>Formação e idiomas</h2>
+                </header>
+                <p>
+                    Sou formado <strong class="destaque-no-texto">Técnico em Zootecnia</strong> pela Escola Agrotécnica Federal de Colatina (EAF-Col). Sou <strong class="destaque-no-texto">graduado em Agrônomia</strong> pelo Instituto Federal de Educação, Ciência e Técnologia do Espírito Santo (<a href="https://itapina.ifes.edu.br/index.php/institucional?showall=1" target="_blank">IFES Itapina</a>) e <strong class="destaque-no-texto">especializado em Avaliações de Imóveis Rurais e Perícias Agronômicas</strong>. Atualmente cursando <strong class="destaque-no-texto">Análise e Desenvolvimento de Sistemas</strong> na Uninter.
+                </p>
+                <p>
+                    Possuo conhecimento em inglês instrumental, pois foi uma disciplina feita durante a primeira graduação. Não falo o idôma, consigo ler pouco e entender pouco.
+                </p>
+            </section>
+
+<!-- Section do portifólio e redes sociais com um lista não ordenada, contendo elementos com imagem, âncora e conteúdo dentro. Os links, quando clicados, abriram em uma nova pagina do navegador, através do atributo target= _blank, na ancora. -->
+            <section id="portifolio-e-redes-sociais">
+                <header>
+                    <h2>Portifólio e Redes Sociais</h2>
+                </header>
+                <ul class="social-media-list">
+                    <li><img src="/images/instagram.svg" alt="logo do Instagram"><a href="https://www.instagram.com/ferrarijansen/?utm_source=qr&r=nametag" target="_blank">Instagram</a></li>
+                    <li><img src="/images/github.svg" alt="logo do Github"><a href="https://github.com/JansenFerrari" target="_blank">Github</a></li>
+                </ul>
+            </section>
+
+<!-- Formulário simples para que o visitante possa entrar em contato comigo, caso queira. Não foi implementado um script para tal. -->
+            <section id="contato">
+                <header>
+                    <h2>Contato</h2>
+                </header>
+                <p>Vamos conversar um pouco?!</p>
+                <p>Se tiver alguma dúvida, sugestão ou contato comercial, preencha o formulário abaixo, que entrarei em contato com você.</p>
+                <form class="formulario-contato" action="#" method="get">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome aqui..."><br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="seuemail@gmail.com"><br><br>
+
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(27)12345-5678"><br><br>
+
+                    <label for="mensagem">Mensagem:</label><br>
+                    <textarea id="mensagem" name="mensagem" rows="4" cols="50" placeholder="Digite sua mensagem aqui..."></textarea><br><br>
+
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+
+
+                </form>
+
+            </section>
+        </div>
+
+    </main>
+
+    <footer>
+        <h3>Desenvolvido por Jansen Ferrari Leitão (<strong>DevJan.</strong>)</h3>
+    </footer>
+
+</body>
+
+</html>
